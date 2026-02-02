@@ -12,6 +12,8 @@ import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 
@@ -24,7 +26,7 @@ public class Utils {
 
 			req = new RequestSpecBuilder().addFilter(RequestLoggingFilter.logRequestTo(log))
 					.addFilter(ResponseLoggingFilter.logResponseTo(log)).setBaseUri(getProperties("baseUrl"))
-					.setContentType(ContentType.JSON).addQueryParam("qa", "click123").build();
+					.setContentType(ContentType.JSON).addQueryParam("key", "qaclick123").build();
 			return req;
 		}
 		return req;
@@ -50,5 +52,11 @@ public class Utils {
 		}
 		return prop.getProperty(key);
 	}
+	
+	public String getJsonPathValue(Response resp, String key) {
+		JsonPath js = new JsonPath(resp.asString());
+		return js.get(key).toString();
+	}
+
 
 }

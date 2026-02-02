@@ -1,8 +1,8 @@
 Request method:	POST
-Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?qa=click123
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
 Proxy:			<none>
 Request params:	<none>
-Query params:	qa=click123
+Query params:	key=qaclick123
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
@@ -27,7 +27,7 @@ Body:
     "language": "English"
 }
 HTTP/1.1 200 OK
-Date: Sun, 01 Feb 2026 22:25:41 GMT
+Date: Mon, 02 Feb 2026 20:50:17 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Strict-Transport-Security: max-age=604800; includeSubDomains
 Access-Control-Allow-Origin: *
@@ -41,16 +41,55 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "283d8b44adfaccbf523577b8052a025f",
+    "place_id": "8a265a4c256247f86cddaae4d5bb800d",
     "scope": "APP",
-    "reference": "b353d46d124b3d6d4a31dbd28660c287b353d46d124b3d6d4a31dbd28660c287",
-    "id": "b353d46d124b3d6d4a31dbd28660c287"
+    "reference": "84fbb0e0066b2b4c8c0e7964d1b9d7ae84fbb0e0066b2b4c8c0e7964d1b9d7ae",
+    "id": "84fbb0e0066b2b4c8c0e7964d1b9d7ae"
 }
-Request method:	POST
-Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?qa=click123
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=8a265a4c256247f86cddaae4d5bb800d
 Proxy:			<none>
 Request params:	<none>
-Query params:	qa=click123
+Query params:	key=qaclick123
+				place_id=8a265a4c256247f86cddaae4d5bb800d
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Mon, 02 Feb 2026 20:50:19 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Strict-Transport-Security: max-age=604800; includeSubDomains
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 257
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "-38.383414",
+        "longitude": "33.427360"
+    },
+    "accuracy": "109",
+    "name": "Mahi Textiles",
+    "phone_number": "(+91) 983 893 3937",
+    "address": "202, Nehru Drive",
+    "types": "shoe park,shop",
+    "website": "http://rahulshettyacademy.com",
+    "language": "English"
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
@@ -59,86 +98,21 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "location": {
-        "lat": "-38.383414",
-        "lng": "33.427360"
-    },
-    "accuracy": 109,
-    "name": "Hina Shoe Mart",
-    "phone_number": "(+91) 983 893 3937",
-    "address": "147, Tidel Park",
-    "types": [
-        "shoe park",
-        "shop"
-    ],
-    "website": "http://rahulshettyacademy.com",
-    "language": "Tamil"
+    "place_id": "8a265a4c256247f86cddaae4d5bb800d"
 }
 HTTP/1.1 200 OK
-Date: Sun, 01 Feb 2026 22:25:42 GMT
+Date: Mon, 02 Feb 2026 20:50:21 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Strict-Transport-Security: max-age=604800; includeSubDomains
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
 Access-Control-Max-Age: 3600
 Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
-Content-Length: 194
+Content-Length: 15
 Keep-Alive: timeout=5, max=100
 Connection: Keep-Alive
 Content-Type: application/json;charset=UTF-8
 
 {
-    "status": "OK",
-    "place_id": "546615b8f99266bee7a09c471769cd38",
-    "scope": "APP",
-    "reference": "a29a00112a8704e17f954eb2763d2ed0a29a00112a8704e17f954eb2763d2ed0",
-    "id": "a29a00112a8704e17f954eb2763d2ed0"
-}
-Request method:	POST
-Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?qa=click123
-Proxy:			<none>
-Request params:	<none>
-Query params:	qa=click123
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "location": {
-        "lat": "-38.383414",
-        "lng": "33.427360"
-    },
-    "accuracy": 109,
-    "name": "Tina Jewellers",
-    "phone_number": "(+91) 983 893 3937",
-    "address": "413, Avalon Centre",
-    "types": [
-        "shoe park",
-        "shop"
-    ],
-    "website": "http://rahulshettyacademy.com",
-    "language": "Thai"
-}
-HTTP/1.1 200 OK
-Date: Sun, 01 Feb 2026 22:25:43 GMT
-Server: Apache/2.4.52 (Ubuntu)
-Strict-Transport-Security: max-age=604800; includeSubDomains
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: POST
-Access-Control-Max-Age: 3600
-Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
-Content-Length: 194
-Keep-Alive: timeout=5, max=100
-Connection: Keep-Alive
-Content-Type: application/json;charset=UTF-8
-
-{
-    "status": "OK",
-    "place_id": "e09ce4139a063263385957b9641c2aae",
-    "scope": "APP",
-    "reference": "fd79060c7e80a2815ba70f543f940305fd79060c7e80a2815ba70f543f940305",
-    "id": "fd79060c7e80a2815ba70f543f940305"
+    "status": "OK"
 }

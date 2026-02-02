@@ -29,4 +29,10 @@ public AddPlace addPlace_RequestPayload(String name, String address, String lang
 	
 	return ap;
 }
+
+public String deletePlace_RequestPayload(String place_id) {
+	return "{\n"
+			+ "    \"place_id\":\""+place_id+"\"\n"
+			+ "}";
+}
 }
