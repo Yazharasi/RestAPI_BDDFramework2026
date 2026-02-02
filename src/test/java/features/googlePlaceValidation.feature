@@ -1,6 +1,6 @@
 Feature: Validating Google MAP APIs
 
-@AddPlace
+@AddPlace @Regression
 Scenario Outline: Verify if the place is being added successfully using AddPlaceAPI
 
 	Given Add Place payload is given with "<name>" "<address>" "<language>"
@@ -17,7 +17,7 @@ Examples:
 #	|Tina Jewellers  	|413, Avalon Centre	|Thai		|
 
 
-@DeletePlace
+@DeletePlace @Regression
 Scenario: Verify if the Delete place API is functioning correctly
 
 	Given DeletePlaceAPI payload
